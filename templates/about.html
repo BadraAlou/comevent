@@ -1,0 +1,454 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>COM.EVENT</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo .jpg' %}" alt="" />
+            <span>
+              COM.EVENT
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-2">
+              <li class="nav-item ">
+                <a class="nav-link" href="{% url 'home' %}">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'about' %}">A propos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="call_btn">
+            <a href="tel:+22360023256">
+              Tel: +223 60 02 32 56
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+
+  </div>
+<!-- custom menu -->
+<div class="custom_menu-container">
+  <div class="container">
+    <div class="custom_menu d-flex justify-content-between align-items-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- custom menu -->
+
+
+   <!-- about section -->
+   <section class="about_section layout_padding mt-5">
+    <div class="container">
+        <div class="row about-row">
+            <div class="col-md-6 image-container">
+                <img src="{% static 'images/s1.jpg' %}" alt="Photo de la société">
+            </div>
+            <div class="col-md-6 text-container">
+                <h1 class="fade-in">Bienvenue chez COM.EVENT</h1>
+                <p class="slide-in">
+                    Chez COM.EVENT, nous sommes passionnés par l'art de la publicité et du marketing. En tant que société nouvelle mais ambitieuse, nous nous engageons à créer des campagnes innovantes et impactantes qui captivent votre audience et renforcent votre marque.
+                </p>
+                <p class="slide-in">
+                    Notre mission est de vous aider à atteindre vos objectifs commerciaux grâce à des stratégies de marketing créatives et axées sur les résultats. Nous croyons en l'importance de l'originalité et de l'innovation pour se démarquer dans un marché concurrentiel.
+                </p>
+                <p class="slide-in">
+                    Grâce à une équipe dévouée de professionnels expérimentés, nous offrons une gamme complète de services, incluant la gestion des médias sociaux, la publicité numérique, la création de contenu, et bien plus encore.
+                </p>
+                <p class="slide-in date">
+                  Fondée en 2022, notre jeune entreprise s'efforce chaque jour de repousser les limites du marketing digital pour nos clients.
+              </p>
+             
+            </div>
+            
+        </div>
+
+        <div class="row team-section">
+            <div class="col-md-6 text-container">
+                <h1 class="fade-in">Notre Équipe et Nos Valeurs</h1>
+                <p class="slide-in">
+                    Chez COM.EVENT, notre équipe est notre plus grand atout. Composée de professionnels passionnés et créatifs, elle est dédiée à fournir des solutions de marketing sur mesure qui répondent aux besoins uniques de chaque client.
+                </p>
+                <p class="slide-in">
+                    Nos valeurs sont au cœur de tout ce que nous faisons. Nous croyons en l'intégrité, l'innovation, et l'excellence. Nous nous engageons à toujours dépasser les attentes de nos clients et à leur offrir des résultats tangibles.
+                </p>
+                <p class="slide-in">
+                    Nous sommes convaincus que la collaboration et la communication ouverte sont essentielles pour le succès. Notre approche centrée sur le client nous permet de créer des partenariats durables et de confiance.
+                </p>
+            </div>
+            <div class="col-md-6 image-container">
+                <img src="{% static 'images/s2.jpg' %}" alt="Photo de l'équipe">
+            </div>
+        </div>
+
+       
+      </div>
+  </div>
+  
+
+    <style>
+      body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.about_section {
+    padding: 6px 0;
+    background: #faf6f6;
+}
+
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.col-md-6,
+.col-md-7,
+.col-md-5 {
+    flex: 1;
+    padding: 15px;
+}
+
+
+
+.image-container img,
+.img-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+
+
+
+
+.text-container h1,
+.detail-box h2,
+.team-text-container h1,
+.text-container p,
+.team-text-container p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards, slideIn 1s forwards;
+}
+
+.text-container h1,
+.team-text-container h1 {
+    animation-delay: 0.5s;
+    font-size: 2em;
+    color: #333;
+}
+
+.detail-box h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.text-container p,
+.team-text-container p,
+.detail-box p {
+    animation-delay: 1s;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #555;
+}
+
+.text-container .date,
+.detail-box a {
+    animation-delay: 1.5s;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #34f893; /* Couleur personnalisée */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Ajout de styles pour les textes */
+.text-container h1,
+.team-text-container h1 {
+    animation-delay: 0.5s;
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-container p,
+.team-text-container p,
+.detail-box p {
+    animation-delay: 1s;
+    line-height: 1.6;
+    color: #666;
+}
+
+.text-container .date,
+.detail-box a {
+    animation-delay: 1.5s;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #264653;
+}
+
+/* Ajout de styles pour la troisième image et sa description */
+.about-row:last-child .image-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-row:last-child .image-container img:hover {
+    transform: scale(1.1);
+}
+
+.about-row:last-child .detail-box {
+    background: linear-gradient(to right, #f7f7f7, #ffffff);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-row:last-child .detail-box h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Animation des textes pour la troisième section */
+.about-row:last-child .detail-box h2,
+.about-row:last-child .detail-box p,
+.about-row:last-child .detail-box a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards, slideIn 1s forwards;
+}
+
+/* Ajout des médias queries pour la responsivité */
+@media (max-width: 768px) {
+    .about-row:last-child .image-container {
+        text-align: center;
+    }
+    .about-row:last-child .detail-box {
+        text-align: center;
+    }
+}
+
+    </style>
+</section>
+<!-- end about section -->
+
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_links pl-lg-5">
+          <h4>
+            Menu
+          </h4>
+          <ul>
+            <li >
+              <a href="{% url 'home' %}">
+                Accueil
+              </a>
+            </li>
+            <li class="active">
+              <a href="{% url 'about' %}">
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'portfolio_html' %}">Portfolio</a>
+            </li>
+            <li>
+              <a href="{% url 'services_html' %}">Services</a>
+            </li>
+            <li>
+              <a href="{% url 'contact_html' %}">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_contact">
+          <h4>
+            Localisation
+          </h4>
+          <div>
+            <img src="{% static 'images/location.png' %}" alt="" />
+            <p>
+              Bamako, Bakodjikoroni Golf
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/telephone.png' %}" alt="" />
+            <p>
+              +223 60 02 32 56
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/envelope.png' %}" alt="" />
+            <p>
+              contact@comevent-mali.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info_social">
+          <h4>
+            Liens Sociaux
+          </h4>
+          <div class="social_container">
+            <div>
+              <a href="https://www.facebook.com/com.event.2024" target="_blank">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="Facebook"  />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/@comevent10" target="_blank">
+                <img src="{% static 'images/twitter-logo.png' %}" alt="Twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/com_event1" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@COM_EVENT1" target="_blank">
+                <img src="{% static 'images/you.png' %}" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_form">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="{% url 'contact_html' %}">
+            <input type="text" placeholder="Enter Your Email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2024 Tous droits réservés par
+      <a href="https://html.design/">Com.Event</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/circles.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>

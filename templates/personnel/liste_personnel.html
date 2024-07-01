@@ -1,0 +1,43 @@
+
+{% extends 'personnel/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center alert alert-info">Liste des Employés</h2>
+    {% if personnel %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mot de passe</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for per in personnel %}
+            <tr>
+                <th scope="row">{{ per.id }}</th>
+                <td>{{ per.nom }}</td>
+                <td>{{ per.email }}</td>
+                <td>{{ per.password }}</td>
+                <td>{{ per.role }}</td>
+                <td>
+                    <a href="{% url 'updatedata' per.id %}" class="btn btn-warning btn-sm">Modifier</a>
+                    <form action="{% url 'deletedata' per.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <input type="submit" class="btn btn-danger" value="Supprimer">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <h6 class="text-center alert alert-warning">Pas d'enregistrement</h6>
+    {% endif %}
+
+</div>
+{% endblock content %}

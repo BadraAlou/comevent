@@ -1,0 +1,35 @@
+
+{% extends 'personnel/index.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Congés</title>
+</head>
+<body>
+    <h2 class="text-center alert alert-info">Liste des Personnel en Congés</h2>
+   
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Utilisateur</th>
+                <th>Date de debut </th>
+                <th>Date de Fin</th>
+                <th>Raison</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for conge in conges %}
+                <tr>
+                    <td>{{ conge.utilisateur.nom }}</td>
+                    <td>{{ conge.date_debut }}</td>
+                    <td>{{ conge.date_fin }}</td>
+                    <td>{{ conge.raison }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+{% endblock content %}

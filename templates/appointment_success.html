@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rendez-vous Confirmé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #f8f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-image: url('{% static "images/b.jpg" %}');
+
+            background-size: cover; /* Redimensionner l'image pour couvrir toute la zone */
+            background-position: center; /* Centrer l'image */
+            background-repeat: no-repeat; /* Ne pas répéter l'image */
+            background-attachment: fixed; /* Fixer l'image lors du défilement */
+            border-radius: 10px; /* Coins arrondis */
+            min-height: 300px; /* Hauteur minimale pour afficher l'image de fond */
+            max-width: 8000px; 
+}
+        
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #e7bf1e;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Rendez-vous Confirmé</h1>
+        <p>Merci {{ appointment.name }}. "Nous vous confirmons votre rendez-vous pour le service {{ appointment.service.name }} le {{ appointment.date }} à {{ appointment.time }}."</p>
+        <p> Pour télécharger une copie de votre confirmation, veuillez cliquer sur le lien ci-dessous.
+           
+    </div>
+    <a href="{% url 'appointment_pdf' appointment.pk %}" class="btn">Télécharger le PDF de confirmation</a></p>
+    <div class="container">
+        <a href="{% url 'home' %}">Aller à la page d'accueil</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'personnel/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center alert alert-info">Paiements par Mois</h2>
+    {% for mois, paiements in paiements_grouped.items %}
+        <h3>{{ mois }}</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Utilisateur</th>
+                    
+                    <th>Total Paiement (FCFA)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for paiement in paiements %}
+                        <tr>
+                            <td>{{ paiement.utilisateur__nom }}</td>
+                            
+                            <td>{{ paiement.total_paiement }} FCFA</td>
+                        </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+</div>
+{% endblock %}

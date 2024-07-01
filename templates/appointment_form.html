@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prendre un Rendez-vous</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <h1>Prendre un Rendez-vous</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("input[name='date']", {
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d"
+        });
+
+        flatpickr("input[name='time']", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true,
+            minuteIncrement: 30,
+            defaultHour: 9,
+            defaultMinute: 0,
+            minTime: "09:00",
+            maxTime: "18:00",
+            enable: [
+                "09:00", "09:30", "12:00", "14:00", "14:30"
+            ]
+        });
+    </script>
+
+    <style>
+     body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #11cb39, #2575fc);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    margin: 0 auto; /* Centrer horizontalement */
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="date"], input[type="time"],  input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #25c3fc;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a63d0;
+}
+
+input.flatpickr-input {
+    color: black;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    outline: none;
+    border: 2px solid #2575fc;
+}
+
+
+    </style>
+</body>
+</html>

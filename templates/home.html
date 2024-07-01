@@ -1,0 +1,681 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="communication, publicité, digital, Mali" />
+  <meta name="description" content="Com.Event - Agence de communication digitale et publicité au Mali" />
+  <meta name="author" content="Com.Event" />
+
+  <title>{% block title %}Com.Event{% endblock %}</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo .jpg' %}" alt="" />
+            <span>
+              Com.Event
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-2">
+              <li class="nav-item active">
+                <a class="nav-link pl-0" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+              </li> 
+            </ul>
+          </div>
+           
+          <div class="call_btn">
+            <a href="tel:+22360023256">
+              Tel: +223 60 02 32 56
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <section class="slider_section">
+      <div class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3 col-lg-2 offset-md-2">
+                  <div class="detail-box">
+                    <h1>
+                      Création Digitale
+                    </h1>
+                    <p>
+                      Nous sommes passionnés par l'innovation numérique et nous vous accompagnons dans la réalisation de vos projets de communication digitale avec expertise et créativité. Nous croyons fermement que chaque projet mérite une approche unique, adaptée à vos besoins spécifiques et à votre marché cible. 
+                    </p>
+                    
+                    <div>
+                      <a href="{% url 'about' %}">
+                        En savoir plus
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <div class="img-box">
+                    <img src="{% static 'images/hero.png' %}" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3 col-lg-2 offset-md-2">
+                  <div class="detail-box">
+                    <h1>
+                      Stratégies Innovantes
+
+                    </h1>
+                    <p>
+                      Nous vous proposons des stratégies innovantes conçues spécialement pour accroître votre visibilité et amplifier votre impact numérique. Que vous cherchiez à captiver de nouveaux publics, à renforcer votre positionnement sur le marché ou à améliorer l'engagement de vos clients, notre approche sur mesure est adaptée à vos objectifs uniques.
+                    </p>
+                    <div>
+                      <a href="{% url 'about' %}">
+                        En savoir plus
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <div class="img-box">
+                    <img src="{% static 'images/hero.png' %}" alt="" />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3 col-lg-2 offset-md-2">
+                  <div class="detail-box">
+                    <h1>
+                      Publicité Efficace
+
+                    </h1>
+                    <p>
+                      Transformez votre visibilité en succès commercial avec nos campagnes publicitaires personnalisées. Chez COM.EVENT, nous nous engageons à vous aider à atteindre votre audience cible de manière efficace et mesurable.Nos stratégies publicitaires innovantes s'appuient sur une analyse approfondie du comportement des consommateurs et des données de marché pour garantir un impact maximal.
+
+                    </p>
+                    <div>
+                      <a href="{% url 'about' %}">
+                        En savoir plus
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                  <div class="img-box">
+                    <img src="{% static 'images/hero.png' %}" alt="" />
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Suivant</span>
+          </a>
+        </div>
+      </div>
+      <style>
+    
+    
+    .slider_section {
+      margin-top: -100px; /* Utilisez une marge négative pour déplacer l'image vers le haut tout en évitant de toucher la barre de navigation */
+    }
+    
+    
+          </style>
+    </section>
+  </div>
+
+<!-- custom menu -->
+<div class="custom_menu-container">
+  <div class="container">
+    <div class="custom_menu">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- custom menu -->
+
+<!-- video section -->
+<section class="video-section">
+  <iframe width="100%" height="600" src="https://www.youtube.com/embed/9Ypx_5DqErg?start=1&autoplay=1&mute=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+
+
+
+<!-- Formulaire de facture -->
+<!-- Formulaire de facture -->
+<div class="action_box">
+  <div class="action_box_inner">
+    <div class="action_box_content">
+      <div class="ac-content-text action_box-text">
+        <!-- Images retirées -->
+        <h4 class="text action_box-title" itemprop="headline">
+          <span style="font-size:14px">Digital Com par COM.EVENT</span><br>
+        </h4>
+        <h3>Vous voulez  une communication digitale pertinente &amp; impactante de nos jours ?</h3>
+      </div>
+      <div class="ac-buttons action_box-buttons">
+        <a href="{% url 'appointment_form' %}" class="btn ac-btn action_box-button action_box-button-first btn-info" title="Communication digitale" target="_self" itemprop="url">Prenez un rendez_vous</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+
+
+
+ .action_box {
+    position: relative;
+    background-color: #71f9ba;
+    padding: 7px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s forwards;
+    animation-delay: 700ms;
+    max-width: 12740px;
+    text-align: center;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.action_box-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.action_box-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.action_box h3 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #070707;
+}
+
+.action_box-buttons {
+    margin-top: 20px;
+}
+
+.action_box-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17b860;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.action_box-button:hover {
+    background-color: #138496;
+}
+.action_box_inner {
+  background-image: url('{% static "images/s1.jpg" %}'); /* Chemin de l'image de fond */
+  background-size: cover; /* Redimensionne l'image pour couvrir tout le conteneur */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  padding: 62px; /* Ajoute du padding pour éviter que le contenu touche les bords */
+ 
+}
+
+.action_box-content {
+  text-align: center; /* Centre le contenu horizontalement */
+  background-color: rgba(255, 255, 255, 0.8); /* Optionnel: ajoute un fond semi-transparent pour améliorer la lisibilité du texte */
+  padding: 20px;
+  border-radius: 10px; /* Optionnel: ajoute des coins arrondis */
+  
+}
+
+.action_box-text h3 {
+  margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.action_box-buttons {
+  margin-top: 10px; /* Ajustez cette valeur selon vos besoins */
+}
+
+</style>
+<!-- Formulaire de facture -->
+<!-- Nos stastiques -->
+</head>
+<body>
+<div class="cover">
+  <h2 class="main-title">Nos Statistiques</h2>
+  <div class="counters-grid">
+      <div class="counter-wrapper">
+          <div class="counter-box"><span class="counter" data-target="2">0</span></div>
+          <p class="counter-title">ANNÉES D'EXPÉRIENCES</p>
+      </div>
+      <div class="counter-wrapper">
+          <div class="counter-box"><span class="counter" data-target="150">0</span></div>
+          <p class="counter-title">CLIENTS</p>
+      </div>
+      <div class="counter-wrapper">
+          <div class="counter-box"><span class="counter" data-target="40">0</span></div>
+          <p class="counter-title">COLLABORATEURS</p>
+      </div>
+      <div class="counter-wrapper">
+          <div class="counter-box"><span class="counter" data-target="100">0</span></div>
+          <p class="counter-title">DISTINCTIONS</p>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter');
+      const speeds = [100, 1000, 1500, 800]; // Tableau de vitesses pour chaque carrousel
+
+      const updateCount = (counter, target, speed) => {
+          let count = 2;
+          const inc = (target - count) / speed;
+
+          const increment = () => {
+              if (count < target) {
+                  count = Math.ceil(count + inc);
+                  counter.innerText = count;
+                  setTimeout(increment, 1);
+              } else {
+                  counter.innerText = target;
+              }
+          };
+
+          increment();
+      };
+
+      const observerOptions = {
+          threshold: 0.5
+      };
+
+      const observerCallback = (entries, observer) => {
+          entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                  const countersInSection = entry.target.querySelectorAll('.counter');
+                  countersInSection.forEach((counter, counterIndex) => {
+                      const target = +counter.getAttribute('data-target');
+                      counter.innerText = '0';
+                      updateCount(counter, target, speeds[counterIndex]);
+                  });
+              }
+          });
+      };
+
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+      const coverSections = document.querySelectorAll('.cover');
+      coverSections.forEach(section => observer.observe(section));
+  });
+</script>
+<!-- Nos stastiques -->
+ <!-- Les entreprises qui nous font confiance -->
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .cover {
+            background-image: url('{% static "images/b1.jpg" %}');
+            background-size: cover; /* Redimensionner l'image pour couvrir toute la zone */
+            background-position: center; /* Centrer l'image */
+            background-repeat: no-repeat; /* Ne pas répéter l'image */
+            background-attachment: fixed; /* Fixer l'image lors du défilement */
+            background-color: #ffffff;
+            padding: 60px 40px;
+            margin: 50px auto;
+            max-width: 8000px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .main-title {
+            font-size: 32px;
+            text-align: center;
+            color: #137b23;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .counters-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+
+        .counter-wrapper {
+            background-color: #edf2ff;
+            padding: 35px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .counter-box {
+            font-size: 35px;
+            color: #b22929;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .counter-title {
+            font-size: 16px;
+            color: #137b23;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+</style>
+
+<!-- Nos stastiques -->
+ <!-- Les clients qui nous font confiance -->
+ <h2 class="main-title">Nos Clients</h2>
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #f0f0f0;
+         margin: 0;
+         padding: 0;
+     }
+     .section {
+        background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+        padding-top: 60px;
+        padding-bottom: 60px;
+     }
+     .container {
+         width: 80%;
+         margin: 0 auto;
+     }
+     .row {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .section-heading {
+         width: 100%;
+         text-align: center;
+         font-size: 2em;
+         margin-bottom: 40px;
+     }
+     .vc_col-sm-2 {
+         width: 16.6666%;
+         padding: 0px;
+     }
+     .vc_col-xs-6 {
+         width: 20%;
+     }
+     .vc_single_image-wrapper {
+         border: 1px solid #ddd;
+         padding: 50px;
+         text-align: cente;
+         background-color: #fff;
+         transition: transform 0.3s ease;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 150px; /* Fixed height for the wrapper */
+         
+}
+     .vc_single_image-wrapper:hover {
+         transform: scale(1.05);
+     }
+  
+     .logo-img {
+    max-width: 105px; /* Fixed width */
+    max-height: 10000px; /* Fixed height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+ </style>
+
+ <section id="nos-clients" class="section">
+     <div class="container">
+         <div class="row">
+             
+         </div>
+         <div class="row">
+             {% for client in clients %}
+             <div class="vc_col-sm-2 vc_col-xs-6">
+                 <div class="vc_single_image-wrapper">
+                  <img class="logo-img" src="{{ client.logo.url }}" alt="{{ client.name }}" title="{{ client.name }}">
+                 </div>
+             </div>
+             {% endfor %}
+         </div>
+     </div>
+ </section>
+ <!-- les entreprises qui noufont confiance -->
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_links pl-lg-5">
+          <h4>
+            Menu
+          </h4>
+          <ul>
+            <li class="active">
+              <a href="{% url 'home' %}">
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'portfolio_html' %}">Portfolio</a>
+            </li>
+            <li>
+              <a href="{% url 'services_html' %}">Services</a>
+            </li>
+            <li>
+              <a href="{% url 'contact_html' %}">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_contact">
+          <h4>
+            Localisation
+          </h4>
+          <div>
+            <img src="{% static 'images/location.png' %}" alt="" />
+            <p>
+              Bamako, Bakodjikoroni Golf
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/telephone.png' %}" alt="" />
+            <p>
+              +223 60 02 32 56
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/envelope.png' %}" alt="" />
+            <p>
+              contact@comevent-mali.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info_social">
+          <h4>
+            Liens Sociaux
+          </h4>
+          <div class="social_container">
+            <div>
+              <a href="https://www.facebook.com/com.event.2024" target="_blank">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="Facebook"  />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/@comevent10" target="_blank">
+                <img src="{% static 'images/twitter-logo.png' %}" alt="Twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/com_event1" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@COM_EVENT1" target="_blank">
+                <img src="{% static 'images/you.png' %}" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_form">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="{% url 'contact_html' %}">
+            <input type="text" placeholder="Enter Your Email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2024 Tous droits réservés par
+      <a href="https://html.design/">Com.Event</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/circles.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+ 
+
+</body>
+
+</html>

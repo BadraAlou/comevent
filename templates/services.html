@@ -1,0 +1,505 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>COM.EVENT</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo .jpg' %}" alt="" />
+            <span>
+              COM.EVENT
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-2">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">À propos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+            </li>
+          </ul>
+         
+        </div>
+        <div class="call_btn">
+          <a href="tel:+22360023256">
+            <Tem>
+              
+            </Tem>l: +223 60 02 32 56
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+
+  </div>
+
+ <!-- custom menu -->
+<div class="custom_menu-container">
+  <div class="container">
+    <div class="custom_menu d-flex justify-content-between align-items-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+<!-- custom menu -->
+
+ 
+  <!-- do section -->
+  <section class="do_section layout_padding-bottom">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Ce que nous faisons
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/idea.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h6>
+                Idées Originales
+              </h6>
+              <p>
+                Des concepts créatifs pour vos campagnes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-green">
+            <div class="img-box">
+              <img src="{% static 'images/controller.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h6>
+                Applications Performantes
+              </h6>
+              <p>
+                Des outils digitaux à la pointe de la technologie.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-red">
+            <div class="img-box">
+              <img src="{% static 'images/monitor.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h6>
+                Haute Résolution
+              </h6>
+              <p>
+                Des visuels de qualité pour impacter.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="content-box bg-green">
+            <div class="img-box">
+              <img src="{% static 'images/rocket-ship.png' %}" alt="" />
+            </div>
+            <div class="detail-box">
+              <h6>
+                Chargement Rapide
+              </h6>
+              <p>
+                Des sites optimisés pour la performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end do section -->
+<!-- skill section -->
+<section class="skill_section layout_padding2">
+  <div class="container">
+    <div class="custom_heading-container">
+      <h2>Nos Compétences</h2>
+    </div>
+    <div class="skill_padding">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/content-strategy.png' %}" alt="Stratégie de Contenu" />
+            </div>
+            <h6>Stratégie de Contenu</h6>
+            <p>Nous développons des stratégies de contenu innovantes et personnalisées, optimisées pour une variété de plateformes, afin de maximiser l'engagement et la portée de votre audience cible. En utilisant des techniques éprouvées de SEO, de storytelling, et d'analyse des données, nous assurons que chaque message résonne avec impact et pertinence.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/seo.png' %}" alt="SEO" />
+            </div>
+            <h6>SEO</h6>
+            <p>Nous optimisons les sites web pour améliorer leur classement dans les moteurs de recherche. En utilisant des techniques de SEO modernes comme l'optimisation des mots-clés, l'amélioration de la vitesse de chargement, et la création de contenu de haute qualité, nous augmentons la visibilité en ligne et attirons un trafic ciblé. Notre approche garantit que votre site web se distingue dans les résultats de recherche, augmentant ainsi votre portée et votre taux de conversion.</p>
+
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/social-media.png' %}" alt="Gestion des Réseaux Sociaux" />
+            </div>
+            <h6>Gestion des Réseaux Sociaux</h6>
+            <p>Nous créons et gérons des campagnes de marketing sur les réseaux sociaux conçues pour maximiser l'engagement et l'interaction avec votre audience. En élaborant des stratégies personnalisées, en produisant des contenus visuels attrayants, et en utilisant des outils d'analyse avancés, nous augmentons la visibilité de votre marque et favorisons une communauté active et fidèle. Notre approche ciblée permet de générer des conversations significatives et d'amplifier votre présence en ligne, contribuant ainsi à la croissance de votre entreprise.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/email-marketing.png' %}" alt="Email Marketing" />
+            </div>
+            <h6>Email Marketing</h6>
+            <p>Nous concevons et mettons en œuvre des campagnes d'emailing ciblées et stratégiques pour maximiser l'engagement des destinataires et améliorer les taux de conversion. En utilisant des techniques de segmentation avancées, des contenus personnalisés, et des appels à l'action efficaces, nous assurons que chaque email est pertinent et impactant. Nos campagnes sont optimisées pour atteindre les boîtes de réception de vos prospects et clients au moment opportun, générant ainsi des résultats mesurables et contribuant à la croissance de votre entreprise.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/ppc.png' %}" alt="Publicité Payante (PPC)" />
+            </div>
+            <h6>Publicité Payante (PPC)</h6>
+            <p>Nous gérons des campagnes publicitaires payantes sur Google Ads et les réseaux sociaux pour maximiser votre retour sur investissement et accroître la visibilité de votre marque. En utilisant des techniques avancées de ciblage, de création d'annonces attrayantes et d'analyse de données en temps réel, nous optimisons chaque campagne pour atteindre les audiences les plus pertinentes. Notre approche stratégique permet de réduire les coûts par clic et d'augmenter les taux de conversion, assurant ainsi une performance publicitaire supérieure et un impact mesurable sur la croissance de votre entreprise.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/graphic-design.png' %}" alt="Design Graphique" />
+            </div>
+            <h6>Design Graphique</h6>
+            <p>Nous créons des visuels attrayants et professionnels pour vos campagnes marketing, en mettant l'accent sur la qualité et l'impact visuel. En utilisant des outils de design de pointe et en appliquant les principes du design graphique, nous produisons des images, des infographies et des vidéos qui captent l'attention de votre audience. Nos créations sont conçues pour renforcer votre identité de marque, améliorer l'engagement des utilisateurs et maximiser l'efficacité de vos campagnes marketing. Grâce à une approche personnalisée et une attention méticuleuse aux détails, nous garantissons des visuels qui se démarquent et communiquent efficacement votre message.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/video-marketing.png' %}" alt="Vidéo Marketing" />
+            </div>
+            <h6>Vidéo Marketing</h6>
+            <p>Nous offrons des services complets de production et de montage de vidéos promotionnelles, en créant des contenus visuels captivants et dynamiques qui mettent en valeur votre marque et vos produits. En utilisant des équipements de tournage de haute qualité, des techniques de montage avancées et des effets visuels professionnels, nous produisons des vidéos qui racontent une histoire persuasive et inspirante. Nos vidéos promotionnelles sont conçues pour attirer l'attention de votre audience, augmenter l'engagement et encourager les conversions. Grâce à une planification minutieuse et une exécution créative, nous garantissons des vidéos qui se démarquent et renforcent l'identité de votre marque.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/data-analysis.png' %}" alt="Analyse de Données" />
+            </div>
+            <h6>Analyse de Données</h6>
+            <p>Nous exploitons l'analyse des données pour mesurer et optimiser les performances de vos campagnes marketing. En utilisant des outils d'analyse avancés et des techniques de data mining, nous collectons et interprétons des données en temps réel pour évaluer l'efficacité de chaque initiative. Grâce à des rapports détaillés et des insights approfondis, nous identifions les opportunités d'amélioration et ajustons les stratégies en conséquence. Cette approche data-driven permet de maximiser le retour sur investissement, d'affiner le ciblage, et d'améliorer continuellement les résultats de vos campagnes, garantissant ainsi un impact durable et mesurable sur votre croissance.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/web-development.png' %}" alt="Développement Web" />
+            </div>
+            <h6>Développement Web</h6>
+            <p>Nous nous spécialisons dans la conception et le développement de sites web performants et responsives, parfaitement adaptés à tous les appareils et navigateurs. En utilisant les dernières technologies web, nous créons des interfaces utilisateur intuitives et esthétiques qui offrent une expérience utilisateur exceptionnelle. Notre approche inclut une optimisation méticuleuse du chargement des pages, une architecture robuste et sécurisée, ainsi que des fonctionnalités personnalisées qui répondent aux besoins spécifiques de votre entreprise. Avec un engagement envers la qualité et l'accessibilité, nous assurons que votre site web se distingue par sa performance, son design moderne et son adaptabilité, renforçant ainsi votre présence en ligne et votre impact commercial.</p>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="circle">
+              <img src="{% static 'images/branding.png' %}" alt="Branding et Identité Visuelle" />
+            </div>
+            <h6>Branding et Identité Visuelle</h6>
+            <p>Nous concevons et développons des identités de marque distinctives pour renforcer la reconnaissance et la mémorabilité de votre entreprise. En utilisant une approche stratégique intégrant la recherche approfondie, le design créatif et la narration cohérente, nous créons des logos, des palettes de couleurs, des typographies et des guides de style qui captivent et véhiculent l'essence même de votre marque. Notre travail vise à établir une connexion émotionnelle avec votre public cible, à accroître la crédibilité de votre entreprise et à garantir une présence visuelle cohérente et impactante sur tous les supports de communication.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  /* General styles for the section */
+.skill_section {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+.custom_heading-container h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.custom_heading-container h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #ff3366;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff3366;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.box h6 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.box p {
+  font-size: 14px;
+  color: #777;
+}
+
+</style>
+
+<!-- end skill section -->
+
+
+
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_links pl-lg-5">
+          <h4>
+            Menu
+          </h4>
+          <ul>
+            <li >
+              <a href="{% url 'home' %}">
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'portfolio_html' %}">Portfolio</a>
+            </li>
+            <li class="active">
+              <a href="{% url 'services_html' %}">Services</a>
+            </li>
+            <li>
+              <a href="{% url 'contact_html' %}">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_contact">
+          <h4>
+            Localisation
+          </h4>
+          <div>
+            <img src="{% static 'images/location.png' %}" alt="" />
+            <p>
+              Bamako, Bakodjikoroni Golf
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/telephone.png' %}" alt="" />
+            <p>
+              +223 60 02 32 56
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/envelope.png' %}" alt="" />
+            <p>
+              contact@comevent-mali.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info_social">
+          <h4>
+            Liens Sociaux
+          </h4>
+          <div class="social_container">
+            <div>
+              <a href="https://www.facebook.com/com.event.2024" target="_blank">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="Facebook"  />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/@comevent10" target="_blank">
+                <img src="{% static 'images/twitter-logo.png' %}" alt="Twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/com_event1" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@COM_EVENT1" target="_blank">
+                <img src="{% static 'images/you.png' %}" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_form">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="{% url 'contact_html' %}">
+            <input type="text" placeholder="Enter Your Email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2024 Tous droits réservés par
+      <a href="https://html.design/">Com.Event</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/circles.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+ 
+
+</body>
+
+</html>

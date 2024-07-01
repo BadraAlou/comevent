@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>COM.EVENT</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/logo .jpg' %}" alt="" />
+            <span>
+              COM.EVENT
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-2">
+              <li class="nav-item ">
+                <a class="nav-link" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">À propos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="call_btn">
+            <a href="tel:+22360023256">
+              Tel: +223 60 02 32 56
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+<!-- custom menu -->
+<div class="custom_menu-container">
+  <div class="container">
+    <div class="custom_menu d-flex justify-content-between align-items-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="{% url 'home' %}">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'portfolio_html' %}">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'services_html' %}">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact_html' %}">Contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- custom menu -->
+
+
+  <!-- contact section -->
+
+  <section class="contact_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+          <h2 class="custom_heading">Contactez Nous!!</h2>
+          <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="d-flex mt-4">
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/contact.jpg' %}" alt="" class="w-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+<!-- info section -->
+<section class="info_section layout_padding-top layout_padding2-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_links pl-lg-5">
+          <h4>
+            Menu
+          </h4>
+          <ul>
+            <li >
+              <a href="{% url 'home' %}">
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'portfolio_html' %}">Portfolio</a>
+            </li>
+            <li>
+              <a href="{% url 'services_html' %}">Services</a>
+            </li>
+            <li class="active">
+              <a href="{% url 'contact_html' %}">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_contact">
+          <h4>
+            Localisation
+          </h4>
+          <div>
+            <img src="{% static 'images/location.png' %}" alt="" />
+            <p>
+              Bamako, Bakodjikoroni Golf
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/telephone.png' %}" alt="" />
+            <p>
+              +223 60 02 32 56
+            </p>
+          </div>
+          <div>
+            <img src="{% static 'images/envelope.png' %}" alt="" />
+            <p>
+              contact@comevent-mali.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info_social">
+          <h4>
+            Liens Sociaux
+          </h4>
+          <div class="social_container">
+            <div>
+              <a href="https://www.facebook.com/com.event.2024" target="_blank">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="Facebook"  />
+              </a>
+            </div>
+            <div>
+              <a href="https://twitter.com/@comevent10" target="_blank">
+                <img src="{% static 'images/twitter-logo.png' %}" alt="Twitter" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/com_event1" target="_blank">
+                <img src="{% static 'images/instagram.png' %}" alt="Instagram" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/@COM_EVENT1" target="_blank">
+                <img src="{% static 'images/you.png' %}" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="info_form">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="{% url 'contact_html' %}">
+            <input type="text" placeholder="Enter Your Email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2024 Tous droits réservés par
+      <a href="https://html.design/">Com.Event</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQuery and Bootstrap scripts -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/circles.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+  
+</body>
+
+</html>

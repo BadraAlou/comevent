@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+  <div class="hero_area">
+    <!-- Formulaire de Connexion -->
+    <div class="login_container">
+     
+      <form method="post">
+        <h2>connectez_vous!</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+    
+    <!-- Texte sous le Formulaire -->
+    <p>Vous n'avez pas de compte ? <a href="{% url 'inscription' %}">Inscrivez-vous ici</a>.</p>
+  </div>
+  
+    <!-- login section ends -->
+  
+  <style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #11cb65, #2575fc);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hero_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a63d0;
+}
+
+.text-center {
+            margin-top: 450px; /* Espacement entre le formulaire et le texte */
+        }
+   
+.login_container {
+            
+           
+           
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            margin: 0 0 0 250px; /* Ajouter une marge à gauche pour décaler vers la droite */
+            text-align: center;
+        }
+
+  </style>
+
+ 
+</body>
+
+</html>
